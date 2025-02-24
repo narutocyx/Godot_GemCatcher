@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cifbwcmnfvw4e"]
+
+[ext_resource type="Texture2D" uid="uid://b6o1ucyi1n7r8" path="res://assets/paddleBlu.png" id="1_ybo18"]
+
+[node name="Paddle" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ybo18")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

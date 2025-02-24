@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cemkqg0vc82jy"]
+
+[ext_resource type="Texture2D" uid="uid://c0j656ck1y6pu" path="res://assets/GameBg.png" id="1_ur5h8"]
+[ext_resource type="PackedScene" uid="uid://cifbwcmnfvw4e" path="res://scenes/paddle.tscn" id="2_ebrdn"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(836, 465)
+texture = ExtResource("1_ur5h8")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(823, 465)
+zoom = Vector2(0.7, 0.7)
+
+[node name="Paddle" parent="." instance=ExtResource("2_ebrdn")]
+position = Vector2(529.5, 733)
